@@ -63,7 +63,7 @@ reset.addEventListener('click',()=>
         box.style.backgroundColor = 'white';
     })
     boxes.addEventListener('click',move);
-    title.innerHTML = "Tie Tac Toe";
+    title.innerHTML = "Tic Tac Toe<span>By Faziel</span>";
     playerMove = 'X';
     count = 0;
 })
