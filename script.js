@@ -17,7 +17,7 @@ function move(e){
         {
             title.innerHTML = "It's a Draw!";
             allBoxes.forEach((box) => {
-                box.style.backgroundColor = 'rgb(153, 153, 153)';
+                box.style.backgroundColor = '#f0ebeb';
             })
         }
 }
@@ -47,7 +47,7 @@ function checkWinner() {
                 title.innerHTML = `Player "${box0.innerHTML}" won`;
                 condition.forEach((indx)=>
                 {
-                    allBoxes[indx].style.backgroundColor = 'rgb(248, 210, 84)';
+                    allBoxes[indx].style.backgroundColor = 'var(--ternary)';
                 })
                 boxes.removeEventListener('click',move);
                 count = 0;
@@ -63,7 +63,7 @@ reset.addEventListener('click',()=>
         box.style.backgroundColor = 'white';
     })
     boxes.addEventListener('click',move);
-    title.innerHTML = "Tic Tac Toe<span>By Faziel</span>";
+    title.innerHTML = "Tic Tac Toe";
     playerMove = 'X';
     count = 0;
 })
